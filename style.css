@@ -1,0 +1,500 @@
+/*######## here for starter styles ############*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --accent-color: #171033;
+  --secondary-color: #b760f8;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+::selection {
+  background-color: yellow;
+  color: black;
+}
+/*######## here for starter styles ############*/
+
+/*main styles here*/
+main {
+  width: 100%;
+  display: flex;
+  padding: 25px;
+  height: 100vh;
+  background-image: linear-gradient(#383055, #211c3f);
+  overflow-x: hidden;
+}
+main::selection {
+  background: #9730e8;
+}
+/*main styles here*/
+
+/*######### section A start here ##########*/
+.section-A {
+  width: 20%;
+}
+
+/*@@@@@@@@@@@@@@@@user styles here@@@@@@@@@@@@@@@@@*/
+.sec-a-img {
+  width: 100%;
+}
+.user-img {
+  width: 80px;
+  height: 80px;
+  background-image: url("/img/user-2.jfif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sec-a-userInfo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.sec-a-userInfo > h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #a9a9af;
+}
+.sec-a-userInfo > h2 {
+  color: white;
+  line-height: 25px;
+}
+/*@@@@@@@@@@@@@@@@user image styles here@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@user menu and library styles here@@@@@@@@@@@@@@@@@*/
+.sec-a-menu,
+.sec-a-library {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.sec-a-menu > h3,
+.sec-a-library > h3 {
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.sec-a-menu > ul > li,
+.sec-a-library > ul > li {
+  list-style: none;
+  color: #a9a9af;
+  font-size: 0.9rem;
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.sec-a-menu > ul > li:hover,
+.sec-a-library > ul > li:hover {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+.sec-a-menu > ul > li > span,
+.sec-a-library > ul > li > span {
+  margin-right: 30px;
+}
+/*@@@@@@@@@@@@@@@@user menu styles here@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@user music control styles here@@@@@@@@@@@@@@@@@*/
+.sec-a-controlPanel {
+  width: 90%;
+  background-image: linear-gradient(120deg, #ce87fb, #9730e8);
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.song-info {
+  display: flex;
+}
+.song-img {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/user.jfif");
+  background-size: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.song-detail {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.song-detail > h3 {
+  color: white;
+  font-size: 1rem;
+}
+.song-detail > p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #111111;
+}
+.song-controller {
+  width: 100%;
+}
+.song-button {
+  display: flex;
+  justify-content: center;
+}
+.song-button > i {
+  margin: 8px;
+  font-size: 1.8rem;
+  color: white;
+  opacity: 0.6;
+}
+.song-button > i:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+/*@@@@@@@@@@@@@@@@user music control styles here@@@@@@@@@@@@@@@@@*/
+/*######### section A end here ##########*/
+/*######### section B start here ##########*/
+.section-B {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.sec-b-header {
+  width: 100%;
+  display: flex;
+  height: 10%;
+  justify-content: space-between;
+  padding: 15px 25px;
+  align-items: center;
+  color: var(--accent-color);
+}
+.sec-b-head-moreInfo {
+  display: flex;
+  align-items: center;
+}
+.sec-b-head-moreInfo > i {
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+.sec-b-head-searchContainer {
+  display: flex;
+  align-items: center;
+}
+.sec-b-head-searchContainer > i {
+  font-size: 1.2rem;
+}
+.sec-b-head-searchContainer > input {
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.sec-b-head-searchContainer > input::placeholder {
+  color: var(--accent-color);
+}
+.sec-b-head-searchContainer > input:focus::-webkit-input-placeholder {
+  color: white;
+}
+.sec-b-head-searchContainer > input:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+#bell__animation:hover {
+  animation: bell 1s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  color: #9730e8;
+}
+@keyframes bell {
+  25% {
+    transform: scale(1.1) rotate(15deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-15deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(15deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(-15deg);
+  }
+}
+.sec-b-body {
+  width: 100%;
+  display: flex;
+}
+.sec-b-body-left {
+  width: 70%;
+}
+.sec-b-body-right {
+  width: 30%;
+  margin-left: 50px;
+}
+.sec-b-body-l__heroImg {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-left: 25px;
+}
+.heroImg__info {
+  width: 50%;
+}
+.heroImg__info > h2 {
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+.heroImg__info > h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 33px;
+}
+.heroImg__info > p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+.heroBtn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  background-color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: transform 0.1s ease;
+}
+.heroImg__img {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.heroImg__img > img {
+  width: 280px;
+  position: absolute;
+  top: -47%;
+}
+.sec-b-body-l__playlist {
+  width: 100%;
+}
+.playlist__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  color: var(--accent-color);
+}
+.playlist__header > h2 {
+  margin-left: 20px;
+}
+.playlist__header > p {
+  margin-right: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.playlist__music__cardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.music__card {
+  width: 155px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: transform 0.1s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.scaleHover:hover {
+  transform: scale(1.1);
+}
+.music-1 {
+  background-image: url("img/pic-3.jfif");
+}
+.music-2 {
+  background-image: url("img/pic-5.jfif");
+}
+.music-3 {
+  background-image: url("img/pic-4.jfif");
+}
+.music-4 {
+  background-image: url("img/pic-2.png");
+}
+.music__card__control_box {
+  font-size: 0.8rem;
+  background-color: hsl(0, 2%, 9%, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  margin-top: 40px;
+  display: flex;
+  color: white;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.control_info > p {
+  font-size: 0.6rem;
+}
+.sec-b-body-l__trendinglist {
+  width: 100%;
+  height: 30%;
+}
+.trendinglist__music__single__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.trendinglist__music__single__container:hover {
+  background-color: #111111;
+}
+.trendinglist__music__single__container:hover .trendlist__music__info > h4 {
+  color: white;
+}
+.trendinglist__music__single__container:hover .trendlist__music__subInfo > h6 {
+  color: white;
+}
+.trendinglist__music__single__container:hover .trendlist__music__subInfo > p {
+  color: #868686;
+}
+.trendinglist__music__single__container:hover
+  .trendlist__music__timeTrack
+  > h4 {
+  color: white;
+}
+.trendinglist__music__single__container:hover .trendlist__music__timeTrack > i {
+  color: white;
+}
+.trendlist__music__info {
+  display: flex;
+  align-items: center;
+}
+.trendlist__music__info > h4,
+.trendImg {
+  margin-right: 10px;
+  color: #2c2c2c;
+}
+.trendlist__music__subInfo > h6 {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+.trendlist__music__subInfo > p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #2c2c2c;
+}
+.trendImg {
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.trendImg-1 {
+  background-image: url("img/trend-1.jpg");
+}
+.trendImg-2 {
+  background-image: url("img/trend-3.jfif");
+}
+.trendImg-3 {
+  background-image: url("img/trend-2.jfif");
+}
+.trendlist__music__timeTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trendlist__music__timeTrack > h4 {
+  margin-right: 50px;
+  color: var(--accent-color);
+}
+.trendlist__music__timeTrack > i {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.bg-fade {
+  opacity: 0.4;
+}
+.artistImg-1 {
+  background-image: url("img/art-1.jpg");
+  margin-bottom: 10px;
+}
+.artistImg-2 {
+  background-image: url("img/art-2.jfif");
+  margin-bottom: 10px;
+}
+.artistImg-3 {
+  background-image: url("img/art-3.jfif");
+}
+.sec-b-body-r-artistPanel > p {
+  margin: 10px 20px;
+}
+.sec-b-body-r-megaControlPanel {
+  height: 50%;
+  margin: 20px 30px;
+}
+.megaControlPanel {
+  background-color: var(--accent-color);
+  height: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  color: white;
+}
+.megaController__img {
+  width: 100%;
+  height: 120px;
+  background-image: url("img/art-3.jfif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.megaControlPanel > h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 10px 0 5px 0px;
+}
+.megaControlPanel > p {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #868686;
+}
+.megaController__soundTrack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.megaController__soundTrack > img {
+  width: 150px;
+}
+.megaController__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.megaController__buttons i {
+  opacity: 0.6;
+}
+.megaController__buttons i:hover {
+  opacity: 1;
+}
+.small__button {
+  font-size: 0.8rem;
+}
+.big__button {
+  font-size: 1.7rem;
+}
+.fade-col {
+  color: #747474;
+}
+/*######### section B end here ##########*/
+/*######### section B end here ##########*/
+/*######### section B end here ##########*/
+/*######### section B end here ##########*/

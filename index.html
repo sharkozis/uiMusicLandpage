@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4660125b62.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome link here -->
+    <!-- font awesome link here -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. this is the main container and get start from here -->
+    <main>
+      <!-- section A refers sidebar of this page -->
+      <div class="section-A">
+        <div class="sec-a-img">
+          <div class="user-img"></div>
+        </div>
+        <div class="sec-a-userInfo">
+          <h3>Hi!</h3>
+          <h2>Muhammad<br />Iqbal</h2>
+        </div>
+        <div class="sec-a-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-house"></i></span>Explore
+            </li>
+            <li>
+              <span><i class="fa-solid fa-lines-leaning"></i></span>Genres
+            </li>
+            <li>
+              <span><i class="fa-solid fa-record-vinyl"></i></span>Albums
+            </li>
+            <li>
+              <span><i class="fa-solid fa-user"></i></span>Artist
+            </li>
+          </ul>
+        </div>
+        <div class="sec-a-library">
+          <h3>Library</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-heart"></i></span>Favourites
+            </li>
+            <li>
+              <span><i class="fa-solid fa-fire-flame-curved"></i></span>Popular
+            </li>
+            <li>
+              <span><i class="fa-solid fa-headphones-simple"></i></span>My Music
+            </li>
+          </ul>
+        </div>
+        <div class="sec-a-controlPanel">
+          <div class="song-info">
+            <div class="song-img"></div>
+            <div class="song-detail">
+              <h3>Can you Touch</h3>
+              <p>Marron 5</p>
+            </div>
+          </div>
+          <div class="song-controller">
+            <div class="song-button">
+              <i class="fa-solid fa-caret-left"></i>
+              <i class="fa-solid fa-circle-pause"></i>
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section A refers sidebar of this page -->
+
+      <!-- section B refers hero content of this page -->
+      <div class="section-B">
+        <div class="sec-b-header">
+          <div class="sec-b-head-title"><h1>Home</h1></div>
+          <div class="sec-b-head-moreInfo">
+            <i class="fa-solid fa-bell" id="bell__animation"></i>
+            <div class="sec-b-head-searchContainer">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search Your Music">
+            </div>
+          </div>
+        </div>
+        <div class="sec-b-body">
+          <div class="sec-b-body-left">
+            <div class="sec-b-body-l__heroImg">
+              <div class="heroImg__info">
+              <h2>MUSICSPOT</h2>
+              <h1>Listen to <br> trending songs <br> all the time</h1>
+              <p>With Musicspot, you can get premium <br> music for free anywhere and at any time</p>
+              <button id="exploreBtn" class="scaleHover heroBtn">Explore Now</button>
+            </div>
+          <div class="heroImg__img"><img src="/img/heroimg.png" alt=""></div>
+            </div>
+            <div class="sec-b-body-l__playlist">
+              <div class="playlist__header">
+                <h2>Playlist</h2>
+                <p>See More</p>
+              </div>
+              <div class="playlist__music__cardContainer">
+                <div class="music__card scaleHover music-1">
+                  <div class="music__card__control_box">
+                    <div class="control_info">
+                      <h6>Luis Benzon</h6>
+                      <p>
+                        My Heart Open.
+                      </p>
+                    </div>
+                    <div class="control_icon"><i class="fa-solid fa-circle-play"></i></div>
+                  </div>
+                </div>
+                <div class="music__card scaleHover music-2">
+                  <div class="music__card__control_box">
+                    <div class="control_info">
+                      <h6>Shneidor gorg</h6>
+                      <p>
+                        With love.
+                      </p>
+                    </div>
+                    <div class="control_icon"><i class="fa-solid fa-circle-play"></i></div>
+                  </div>
+                </div>
+                <div class="music__card scaleHover music-3">
+                  <div class="music__card__control_box">
+                    <div class="control_info">
+                      <h6>Alec Benzamin</h6>
+                      <p>
+                        Let Me Down.
+                      </p>
+                    </div>
+                    <div class="control_icon"><i class="fa-solid fa-circle-play"></i></div>
+                  </div>
+                </div>
+                <div class="music__card scaleHover music-4">
+                  <div class="music__card__control_box">
+                    <div class="control_info">
+                      <h6>Christofer</h6>
+                      <p>
+                        Sorry.
+                      </p>
+                    </div>
+                    <div class="control_icon"><i class="fa-solid fa-circle-play"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec-b-body-l__trendinglist">
+              <div class="playlist__header">
+                <h2>Trending</h2>
+                <p>See More</p>
+              </div>
+              <div class="trendinglist__music__cardContainer">
+                <div class="trendinglist__music__single__container">
+                  <div class="trendlist__music__info">
+                    <h4>01</h4>
+                    <div class="trendImg trendImg-1"></div>
+                    <div class="trendlist__music__subInfo">
+                      <h6>Let me down slowly</h6>
+                      <p>Alec Benzamin</p>
+                    </div>
+                  </div>
+                  <div class="trendlist__music__timeTrack">
+                    <h4>3:20</h4>
+                    <i class="fa-solid fa-circle-play"></i>
+                  </div>
+                </div>
+                <div class=" trendinglist__music__single__container">
+                  <div class="trendlist__music__info">
+                    <h4>02</h4>
+                    <div class="trendImg trendImg-2"></div>
+                    <div class="trendlist__music__subInfo">
+                      <h6>Stitches</h6>
+                      <p>Shawn Mendes</p>
+                    </div>
+                  </div>
+                  <div class="trendlist__music__timeTrack">
+                    <h4>2:50</h4>
+                    <i class="fa-solid fa-circle-play"></i>
+                  </div>
+                </div>
+                <div class=" bg-fade trendinglist__music__single__container">
+                  <div class="trendlist__music__info">
+                    <h4>03</h4>
+                    <div class="trendImg trendImg-3"></div>
+                    <div class="trendlist__music__subInfo">
+                      <h6>You have youth</h6>
+                      <p>Chrissy Costanza</p>
+                    </div>
+                  </div>
+                  <div class="trendlist__music__timeTrack">
+                    <h4>1:20</h4>
+                    <i class="fa-solid fa-circle-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>         
+          </div>
+          <div class="sec-b-body-right">
+            <div class="sec-b-body-r-artistPanel">
+              <div class="playlist__header">
+                <h2>Top Artist</h2>
+              </div>
+              <div class="trendinglist__music__single__container">
+                <div class="trendlist__music__info">
+                  <div class="trendImg artistImg-1"></div>
+                  <div class="trendlist__music__subInfo">
+                    <h6>Dream</h6>
+                    <p>Jonathan Dumbess</p>
+                  </div>
+                </div>
+              </div>
+              <div class="trendinglist__music__single__container">
+                <div class="trendlist__music__info">
+               
+                  <div class="trendImg artistImg-2"></div>
+                  <div class="trendlist__music__subInfo">
+                    <h6>Falls Part</h6>
+                    <p>Anthony mark</p>
+                  </div>
+                </div>
+              </div>
+              <div class="trendinglist__music__single__container">
+                <div class="trendlist__music__info">
+                
+                  <div class="trendImg artistImg-3"></div>
+                  <div class="trendlist__music__subInfo">
+                    <h6>Time like</h6>
+                    <p>Billie Eilish</p>
+                  </div>
+                </div>
+              </div>
+              <p>See More</p>
+            </div>
+            <div class="sec-b-body-r-megaControlPanel">
+              <div class="megaControlPanel">
+                <div class="megaController__img"></div>
+                <h2>Treat You Better</h2>
+                <p>Shawn Mendes</p>
+                <div class="megaController__soundTrack">
+                  <p>1:20</p>
+                  <img src="img/sound.png" alt="">
+                  <p class="fade-col">3:00</p>
+                </div>
+                <div class="megaController__buttons">
+                  <div class="small__button"><i class="fa-solid fa-repeat"></i></i></div>
+                  <div class="">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <i class="fa-solid fa-circle-pause big__button"></i>
+                    <i class="fa-solid fa-caret-right"></i></div>
+                  <div class="small__button"><i class="fa-solid fa-shuffle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section B refers hero content of this page -->
+    </main>
+    <!-- 1. this is the main container and end here -->
+    <!-- 1. this is the main container and end here -->
+    <!-- 1. this is the main container and end here -->
+    <script src="app.js"></script>
+  </body>
+</html>
